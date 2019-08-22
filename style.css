@@ -9,10 +9,21 @@ h1 {
   text-align: center;
 }
 
+.overlay {
+  position: absolute;
+  top: 36px;
+  right: 227px;
+  z-index: 10;
+  width: 200px;
+  height: 480px;
+  background-color: rgba(0,0,0,0.5);
+}
+
 .carousel-container{
   width: 70%;
   margin: auto;
   overflow: hidden;
+  
 }
 
 .carousel-slide{
