@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
 
-    <title>Image gallery</title>
+<head>
+  <meta charset="utf-8">
 
-    <link rel="stylesheet" href="style.css">
-    
-  </head>
+  <title>Image gallery</title>
 
-  <body>
-    <h1>Image gallery example</h1>
+  <link rel="stylesheet" href="style.css">
 
-    <div class="full-img">
-      <img class="displayed-img" src="images/pic1.jpg">
-      <div class="overlay"></div>
-      <button class="dark">Darken</button>
-      <a class="prev"  onclick="slideImg(-1)">&#10094;</a>
-      <a class="next" onclick="slideImg(1)">&#10095;</a>
+</head>
+
+<body>
+  <h1>Image gallery example</h1>
+
+  <div class="carousel-container">
+    <div class="overlay"></div>
+    <div class="carousel-slide">
+
+      <img src="images/pic1.jpg">
+      <img src="images/pic2.jpg">
+      <img src="images/pic3.jpg">
+      <img src="images/pic4.jpg">
+      <img src="images/pic5.jpg">
+
+
     </div>
 
-    <div class="thumb-bar">
+  </div>
+
+  <button id="prev">prev</button>
+  <button id="next">next</button>
+  <div class="thumb-bar">
 
 
-    </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+  <script src="main.js"></script>
+</body>
+
 </html>
