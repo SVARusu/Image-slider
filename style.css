@@ -9,12 +9,21 @@ h1 {
   text-align: center;
 }
 
-.overlay {
+.right-overlay {
   position: absolute;
   top: 36px;
-  right: 227px;
+  right: 229px;
   z-index: 10;
-  width: 200px;
+  width: 14.3%;
+  height: 480px;
+  background-color: rgba(0,0,0,0.5);
+}
+.left-overlay {
+  position: absolute;
+  top: 36px;
+  left: 229px;
+  z-index: 10;
+  width: 14.3%;
   height: 480px;
   background-color: rgba(0,0,0,0.5);
 }
