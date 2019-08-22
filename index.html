@@ -12,14 +12,19 @@
   <body>
     <h1>Image gallery example</h1>
 
-    <div class="full-img">
-      <img class="displayed-img" src="images/pic1.jpg">
-      <div class="overlay"></div>
-      <button class="dark">Darken</button>
-      <a class="prev"  onclick="slideImg(-1)">&#10094;</a>
-      <a class="next" onclick="slideImg(1)">&#10095;</a>
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="images/pic5.jpg" alt="" srcset="">
+        <img src="images/pic1.jpg" alt="" srcset="">
+        <img src="images/pic2.jpg" alt="" srcset="">
+        <img src="images/pic3.jpg" alt="" srcset="">
+        <img src="images/pic4.jpg" alt="" srcset="">
+        <img src="images/pic5.jpg" alt="" srcset="">
+        <img src="images/pic1.jpg" alt="" srcset="">
+      </div>
     </div>
-
+    <button id="prev">prev</button>
+    <button id="next">next</button>
     <div class="thumb-bar">
 
 
