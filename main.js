@@ -20,4 +20,8 @@ let counter = 1;
 let size = carouselImages[0].clientWidth;
 console.log(size);
 
+
+console.log("");
+
+
 carouselSlide.style.transform = "translateX(" + (size * (counter * 2)) + "px)";
