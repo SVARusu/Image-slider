@@ -44,6 +44,8 @@ h1 {
   justify-content: center;
 }
 
+/* ///////////////////////// buttons ////////////////////////// */
+
 
 #prev,
 #next {
@@ -56,7 +58,7 @@ h1 {
   margin-top: -150px;
   color: rgb(0, 0, 0);
   font-weight: bold;
-  font-size: 50px;
+  font-size: 40px;
   transition: 0.6s ease;
   /* border-radius: 0 3px 3px 0; */
   user-select: none;
@@ -74,5 +76,24 @@ h1 {
   margin-left: 210px;
 }
 
+
+/* ///////////////////////// dots ////////////////////////// */
+.dots{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 420px;
+  margin-left: 485px;
+  z-index: 10;
+}
+
+
+.dot{
+  width: 20px;
+  height: 20px;
+  margin: 3px;
+  border-radius: 10000000px;
+  background-color: rgb(0, 0, 0);
+}
 
 
