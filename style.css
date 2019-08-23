@@ -99,3 +99,17 @@ h1 {
 }
 
 
+.thumb-bar{
+  margin: auto;
+  width: 41.5%;
+  justify-content: center;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+  position: relative;
+}
+
