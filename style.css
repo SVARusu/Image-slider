@@ -11,19 +11,19 @@ h1 {
 /* ///////////////////////// OVERLAY ////////////////////////// */
 .right-overlay {
   position: absolute;
-  top: 36px;
-  right: 229px;
+  /* top: 36px; */
+  right: 0;
   z-index: 10;
-  width: 14.3%;
+  width: 20.3%;
   height: 480px;
   background-color: rgba(0,0,0,0.5);
 }
 .left-overlay {
   position: absolute;
-  top: 36px;
-  left: 229px;
+  /* top: 36px;
+  left: 229px; */
   z-index: 10;
-  width: 14.3%;
+  width: 20.3%;
   height: 480px;
   background-color: rgba(0,0,0,0.5);
 }
@@ -31,6 +31,7 @@ h1 {
 /* ///////////////////////// carousel ////////////////////////// */
 
 .carousel-container{
+  position: relative;
   width: 70%;
   margin: auto;
   overflow: hidden;
@@ -41,7 +42,8 @@ h1 {
 .carousel-slide{
   margin: auto;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  margin-left: -423px;
 }
 
 /* ///////////////////////// buttons ////////////////////////// */
@@ -55,7 +57,7 @@ h1 {
   width: auto;
   padding: 16px;
   z-index: 20;
-  margin-top: -150px;
+  margin-top: -43px;
   color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 40px;
@@ -66,13 +68,13 @@ h1 {
 }
 #next {
   
-  border-radius: 3px 0 0 3px;
+  
   margin-left: 800px;
 }
 
 #prev {
   
-  border-radius: 3px 0 0 3px;
+ 
   margin-left: 210px;
 }
 
