@@ -9,22 +9,25 @@ h1 {
   text-align: center;
 }
 /* ///////////////////////// OVERLAY ////////////////////////// */
-.right-overlay {
+.carousel-container::before{
   position: absolute;
-  /* top: 36px; */
-  right: 0;
   z-index: 10;
   width: 20.3%;
-  height: 480px;
+  height: 83%;
+  left: 0;
+  top: 0;
+  content: '';
   background-color: rgba(0,0,0,0.5);
 }
-.left-overlay {
+
+.carousel-container::after{
   position: absolute;
-  /* top: 36px;
-  left: 229px; */
   z-index: 10;
   width: 20.3%;
-  height: 480px;
+  height: 83%;
+  right: 0;
+  top: 0;
+  content: '';
   background-color: rgba(0,0,0,0.5);
 }
 
@@ -36,15 +39,24 @@ h1 {
   margin: auto;
   overflow: hidden;
   
-  
 }
 
 .carousel-slide{
+  /* width: 100%; */
   margin: auto;
   display: flex;
   /* justify-content: center; */
   margin-left: -423px;
 }
+.carousel-slide div{
+  height: 480px;
+  /* width: 70%; */
+}
+
+/* .carousel-image{
+  
+  width: 400px;
+} */
 
 /* ///////////////////////// buttons ////////////////////////// */
 
@@ -67,49 +79,87 @@ h1 {
   
 }
 #next {
+  right: 210px;
   
-  
-  margin-left: 800px;
 }
 
 #prev {
+  left: 210px;
+
+}
+
+#lowerSliderNext, #lowerSliderPrev{
+  cursor: pointer;
+  position: absolute;
+  top: 30%;
+  color: white;
+  width: auto;
+  z-index: 20;
+  font-size: 30px;
+  /* visibility: hidden; */
+  opacity: 0;
+  transition: 0.5s;
   
- 
-  margin-left: 210px;
+}
+
+.lower-slider:hover #lowerSliderPrev, .lower-slider:hover #lowerSliderNext{
+  /* visibility: visible; */
+  opacity: 1;
+
+}
+
+#lowerSliderNext{
+  left: 620px;
 }
 
 
 /* ///////////////////////// dots ////////////////////////// */
-.dots{
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  margin-top: 420px;
-  margin-left: 485px;
-  z-index: 10;
-}
-
-
-.dot{
-  width: 20px;
-  height: 20px;
-  margin: 3px;
-  border-radius: 10000000px;
-  background-color: rgb(0, 0, 0);
-}
-
-
-.thumb-bar{
+.lower-slider{
+  width: 642px;
+  overflow: hidden;
   margin: auto;
-  width: 41.5%;
-  justify-content: center;
+  position: relative;
+  background: black;
+}
+.thumb-bar{
+  display: flex;
+  
+  
 }
 
 .thumb-bar img {
   display: block;
   width: 20%;
-  float: left;
+  /* float: left; */
   cursor: pointer;
-  position: relative;
+  
+  opacity: 0.7;
+  
+  /* position: relative; */
 }
 
+/* ///////////////////////// image-count ////////////////////////// */
+.image-count{
+  position: absolute;
+  top: 420px;
+  right: 300px;
+  z-index: 10;
+}
+
+.image-count span{
+  font-size: 25px;
+  color: white;
+}
+
+/* ///////////////////////// image-info ////////////////////////// */
+.carousel-slide div h2{
+  color: white;
+  margin-top: -90px;
+  margin-left: 40px;
+  z-index: 10;
+}
+.carousel-slide div p{
+  color: white;
+  margin-left: 40px;
+  width: 250px;
+}
